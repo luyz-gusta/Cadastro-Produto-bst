@@ -1,6 +1,6 @@
 .container__buttons{
     display: flex;
-    height: 150px;
+    height: 120px;
     gap: 15px;
 }
 
