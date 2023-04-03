@@ -61,7 +61,14 @@ const isValidFields = () => {
 //Interação com o layout
 const salvarProduto = () => {
     if(isValidFields()){
-        console.log('cadastrando produto')
+        const produto = {
+            nome: document.getElementById('nome').value,
+            peso: document.getElementById('peso').value,
+            cupom: document.getElementById('cupom').value,
+            preco: document.getElementById('preco').value,
+            descricao: document.getElementById('descricao').value
+        }
+        createProduto(produto)
     }
 }
 
